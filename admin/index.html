@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Your page title here :)</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".hamburger").click(function(){
+          $(".wrapper").toggleClass("collapse");
+        })
+      });
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="wrapper">
+    <div class="top_navbar">
+      <div class="hamburger">
+
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="top_menu">
+        <div class="logo"><a href="#">Logo</a></div>
+        <ul>
+          <li><a href="#"> <ion-icon name="person-outline"></ion-icon> </a></li>
+          <li><a href="#"> <ion-icon name="exit-outline"></ion-icon> </a></li>
+        </ul>
+      </div>  
+
+    </div>
+
+    <div class="sidebar">
+      <ul>
+        <li><a href="#" class="active">
+          <span class="icon"> <ion-icon name="cube-outline" aria-hidden="true"></ion-icon> </span>
+          <span class="title">Products</span>
+        </a></li>
+
+        <li><a href="#">
+          <span class="icon"> <ion-icon name="tv-outline" aria-hidden="true"></ion-icon> </span>
+          <span class="title">Channel</span>
+        </a></li>
+
+      </ul>
+    </div>
+
+    <div class="main_container">
+    
+        <table class="table">
+          <thead>
+          <th>Products</th>
+          <th>Price</th>
+          <th>Categories</th>
+          <th>Channels</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td data-label="Products">Iphone</td>
+              <td data-label="Price">$700</td>
+              <td data-label="Categories">Electronics</td>
+              <td data-label="Channel"></td>
+            </tr>
+          </tbody>
+        </table>   
+
+      </div>
+
+    </div>
+
+   
+
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
