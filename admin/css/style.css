@@ -57,8 +57,10 @@ body {
   display: inline-block;
 }
 
-.logo a {
-  text-decoration: none;
+.logo img {
+  width: 40px;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
 .top_menu ul {
