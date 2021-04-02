@@ -1,114 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
-    <!-- Basic Page Needs
+  <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Your page title here :)</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <!-- Mobile Specific Metas
+  <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- FONT
+  <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-    <!-- CSS
+  <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/style.css">
 
-    <!-- Favicon
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<link rel="stylesheet" href="./css/style.css">
+
+  <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-      $(document).ready(function(){
-        $(".hamburger").click(function(){
-          $(".wrapper").toggleClass("collapse");
-        })
-      });
-    </script>
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-
 <body>
 
-    <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="page-topbar">
+  <div class="logo-area"> 
+    <img src="./images/logo.png" alt="">
+  </div>
+ 
+  <div class="quick-area">
 
-  <div class="wrapper">
-    <div class="top_navbar">
-      <div class="hamburger">
+    <ul class="pull-left info-menu  user-notify">
+      <button id="menu_icon"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      
+    </ul>
 
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <ul class="pull-right info-menu user-info">
+      <li class="profile">
+        <a href="#" data-toggle="dropdown" class="toggle" aria-expanded="false">
+          <img
+            src="./images/profile-pic.png"
+            class="img-circle img-inline">
+          <span>Taylor <i class="fa fa-angle-down"></i></span>
+        </a>
+        <ul class="dropdown-menu profile fadeIn ">
+          <li>
+            <a href="#settings">
+              <i class="fa fa-wrench"></i>
+              Settings
+            </a>
+          </li>
+          <li>
+            <a href="#profile">
+              <i class="fa fa-user"></i>
+              Profile
+            </a>
+          </li>
 
-      <div class="top_menu">
-        <div class="logo"><a href="#"><img src="./images/pngaaa.com-3080909.png" alt=""></a></div>
-        <ul>
-          <li><a href="#"> <ion-icon name="person-outline"></ion-icon> </a></li>
-          <li><a href="#"> <ion-icon name="exit-outline"></ion-icon> </a></li>
+          <li class="last">
+            <a href="ui-login.html">
+              <i class="fa fa-lock"></i>
+              Sign Out
+            </a>
+          </li>
         </ul>
-      </div>  
 
+
+      </li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="page-sidebar expandit">
+  <div class="sidebar-inner" id="main-menu-wrapper">
+    <div class="profile-info row ">
+      <div class="profile-image ">
+        <a href="ui-profile.html">
+          <img alt=""
+            src="./images/profile-pic.png"
+            class="img-circle img-inline class=" img-responsive img-circle">
+        </a>
+      </div>
+      <div class="profile-details">
+        <h3>
+          <a href="ui-profile.html">Shane Taylor</a>
+        </h3>
+
+      </div>
     </div>
 
-    <div class="sidebar">
-      <ul>
-        <li><a href="#" class="active">
-          <span class="icon"> <ion-icon name="cube-outline" aria-hidden="true"></ion-icon> </span>
-          <span class="title">Products</span>
-        </a></li>
+    <ul class="wraplist" style="height: auto;">
+      <!--          <li class="menusection">Main</li>-->
+      <li><a href=""><span class="sidebar-icon"><i class="las la-box"></i></span> <span
+            class="menu-title">Product</span></a></li>
+      <li><a href=""><span class="sidebar-icon"><i class="las la-project-diagram"></i></span> <span class="menu-title">Channels
+          </span></a></li>
+      
+    </ul>
+  </div>
+</div>
 
-        <li><a href="#">
-          <span class="icon"> <ion-icon name="tv-outline" aria-hidden="true"></ion-icon> </span>
-          <span class="title">Channel</span>
-        </a></li>
 
-      </ul>
-    </div>
-
-    <div class="main_container">
-    
-        <table class="table">
+  <section id="main-content">
+    <section class="wrapper main-wrapper row">
+      <div class="col-md-6">
+        <section class="box"></section>
+      </div>
+      <div class="col-md-6">
+        <section class="box"></section>
+      </div>
+  
+      <div class="clearfix"></div>
+      <!--**************clearfix**************-->
+  
+      <div class="col-md-12">
+        
+        <table>
           <thead>
-          <th>Products</th>
-          <th>Price</th>
-          <th>Categories</th>
-          <th>Channels</th>
+            <tr>
+              <th>Products</th>
+              <th>Price</th>
+              <th>Category</th>
+              <th>Channels</th>
+            </tr>
           </thead>
-
+        
           <tbody>
             <tr>
-              <td data-label="Products">Iphone</td>
-              <td data-label="Price">$700</td>
-              <td data-label="Categories">Electronics</td>
-              <td data-label="Channel"></td>
+              <td data-heading="Products">Iphone</td>
+              <td data-heading="Price">$300</td>
+              <td data-heading="Category">Electroincs</td>
+              <td data-heading="Channels">
+
+                <a href=""> <span>Amazon</span> <img src="./images/amazon-logo.png" alt="" width="30px">  </a>
+
+                <a href=""> <span>Ebay</span> <img src="./images/EBay_logo.png" alt="" width="30px">  </a>
+                
+              </td>
             </tr>
           </tbody>
-        </table>   
+        </table>
 
       </div>
 
-    </div>
+     
+  
+    </section>
+</section>
 
-   
 
 
-    <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+      <script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
+      <script src="./js/main.js"></script>
 </body>
-
 </html>
